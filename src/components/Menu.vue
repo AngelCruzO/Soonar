@@ -4,9 +4,12 @@
             <h1><a href="">Soonar</a></h1>
         </div>
         <nav>
-            <li><a href="">Inicio</a></li>
-            <li><a href="">Ecosistema</a></li>
-            <li><a href="">Voluntariado</a></li>
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Ecosistema</a></li>
+                <li><a href="">Voluntariado</a></li>
+            </ul>
+            
         </nav>
     </header>
 </template>
@@ -37,16 +40,22 @@ export default {
 header{
     height: 90px;
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: space-between;
     align-items: center;
     background: #3333;
 }
 
 nav{
+    
+    width: 500px;
+}
+
+ul{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 500px;
+
 }
 
 li{
@@ -75,5 +84,21 @@ li a{
     font-size: 24px;
 }
 
+@media (max-width: 680px) {
+    header {
+        height: auto;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .logo{
+        margin: 20px;
+    }
+
+    ul{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
 
 </style>
