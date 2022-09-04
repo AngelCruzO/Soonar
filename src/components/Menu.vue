@@ -5,9 +5,9 @@
         </div>
         <nav>
             <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Ecosistema</a></li>
-                <li><a href="">Voluntariado</a></li>
+                <li><a href="" data-text="Inicio">Inicio</a></li>
+                <li><a href="" data-text="Ecosistema">Ecosistema</a></li>
+                <li><a href="" data-text="Voluntariado">Voluntariado</a></li>
             </ul>
             
         </nav>
@@ -31,6 +31,8 @@ export default {
     src: local('Abang Regular'), url('../assets/fonts/Abang.woff') format('woff');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -46,9 +48,9 @@ header{
     background: #3333;
 }
 
-nav{
-    
+nav{    
     width: 500px;
+    font-family: 'Poppins', sans-serif;
 }
 
 ul{
@@ -79,9 +81,44 @@ h1 a{
     color: #7BC789;
 }
 
-li a{
-    color: #fff;
-    font-size: 24px;
+ul li a{
+	position: relative;
+	display: block;
+	text-decoration: none;
+	font-size: 25px;
+	font-weight: 800;
+	color: rgba(255, 255, 255, 0.5);
+}
+
+ul li a:before{
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(../assets/wave.png);
+	-webkit-background-clip: text;
+	background-repeat: repeat-x;
+	animation:  animate 2s linear infinite;
+	transition: 0.5s;
+	width: 0;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+ul li a:hover:before{
+	width: 100%;
+}
+
+@keyframes animate{
+
+	0%{
+		background-position: 0px;
+	}
+
+	100%{
+		background-position: 200px;
+	}
+
 }
 
 @media (max-width: 680px) {
