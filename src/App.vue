@@ -1,13 +1,13 @@
 <template>
-  <Menu/>
+  <Inicio/>
 </template>
 
 <script>
-import Menu from '@/components/Menu.vue'
+import Inicio from '@/views/Inicio.vue'
 export default {
   name: 'App',
   components:{
-    Menu
+    Inicio
   }
 }
 </script>
