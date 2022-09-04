@@ -42,7 +42,6 @@ export default {
 header{
     height: 90px;
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: space-between;
     align-items: center;
     background: #3333;
@@ -50,6 +49,7 @@ header{
 
 nav{    
     width: 500px;
+    margin-right: 20px;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -71,7 +71,7 @@ a{
 /* ESPECIFICOS */
 
 .logo{
-    font-family: 'Abang Regular';
+    font-family: 'Abang Regular',sans-serif;
     font-size: 25px;
     margin-left: 2em;
     color: #7BC789;
@@ -87,7 +87,8 @@ ul li a{
 	text-decoration: none;
 	font-size: 25px;
 	font-weight: 800;
-	color: rgba(255, 255, 255, 0.5);
+	color: rgba(255, 255, 255, 0.4);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 ul li a:before{
@@ -121,7 +122,7 @@ ul li a:hover:before{
 
 }
 
-@media (max-width: 680px) {
+@media (max-width: 800px) {
     header {
         height: auto;
         width: 100%;
