@@ -61,7 +61,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        opacity: 0.8;
+        opacity: 0.9;
         z-index: -1;
     }
 

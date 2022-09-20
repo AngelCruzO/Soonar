@@ -87,7 +87,7 @@ ul li a{
 	text-decoration: none;
 	font-size: 25px;
 	font-weight: 800;
-	color: rgba(0, 0, 0, 0.2);
+	color: rgba(255, 255, 255, 0.5);
     /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
 }
 
