@@ -40,7 +40,7 @@ export default {
 }
 
 header{
-    height: 90px;
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
